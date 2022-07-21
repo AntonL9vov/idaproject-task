@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="wrapper">
+  <AddItem></AddItem>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import AddItem from "@/pages/AddItem";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AddItem
+
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Cabin:wght@700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Nunito:wght@700;900&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+</style>
+<style scoped lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+}
+.wrapper{
+  margin: 32px;
+  max-width: 1440px;
 }
 </style>
